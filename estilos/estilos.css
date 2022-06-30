@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------- HEADER -----------*/
+.header h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.header ul{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-style: inherit;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* ----------- MAIN INDEX ---------*/
+.main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.producto1{
+    display: flex;
+    justify-content: center;
+    color: #005733;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    padding-right: 30px;
+    margin-left: 30px;
+}
+
+.producto2{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #005733;
+    font-weight: bold;
+    align-items: center;
+    padding-right: 30px;
+    margin-left: 30px;
+}
+
+.colchdescr1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+
+
+}
+
+.colchdescr2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.detallecolchon1{
+    display: flex;
+    color: #005733;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: right;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.detallecolchon2{
+    display: flex;
+    color: #005733;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: right;
+    align-items: center;
+    padding-left: 30px;
+}
+
+/* --------- PAGINA NOSOTROS ----------*/
+.nosotros section{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.nosotros article{
+    display: flex;
+    justify-content: center;
+    color: #005733;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.nosotros img{
+    display: flex;
+    justify-content: right;
+    padding-left: 30px;
+}
+
+/* ---------- PAGINA FAQS ---------*/
+.mainfaqs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.mainfaqs article{
+    color: #005733;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.mainfaqs article p{
+    padding: 5px;
+}  
+.mapa{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.mapa p{
+    text-align: center;
+    color: #005733;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* ---------- PAGINA CONTACTO --------*/
+.section__formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    color: #005733;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+}
+
+.dudas{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #005733;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* ----------- PAGINA PRODUCTOS -----------*/
+
+.main__productos article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+.main__productos div p{
+    font-size: 20px;
+    color: #005733;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* ---------- FOOTER -----------*/
+.footer ul{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-style: inherit;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.footer li{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: center;
+
+}
+
+/* ---------- GRILLA ------------*/
+.contenedor {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+  }
+  
+    .header { 
+      grid-area: header;
+      background-color: #005733; 
+    }
+  
+    .main { 
+      grid-area: main;
+      background-color: white; 
+    }
+  
+    .footer { 
+      grid-area: footer;
+      background-color: #005733;
+    }
+  
+
+/*----------- RD CELULAR ----------*/
+
+@media screen and (max-width: 500px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr 1fr 1fr);
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"; 
+    }
+    
+    .header ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .footer li{
+        display: flex;
+        justify-content: center;
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+    }
+    /* ------- PAGINA INDEX ------*/   
+    .bannerprincipal{
+        display: none;
+    }
+    .producto1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+    .producto2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    }
+
+    .producto1 img{
+        width: 250px;
+    }
+
+    .producto2 img{
+        width: 250px;
+    }
+
+    /* --------- PAGINA FAQS ---------*/
+
+    .mainfaqs article{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        font-size: 15px;
+        justify-content: center;
+    }
+
+    .mainfaqs section img{
+        width: 300px;
+    }
+
+    .mapa p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mapa{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: left;
+        width: 100px;
+        padding-right: 300px;
+    }
+
+    /* -------- PAGINA NOSOTROS -------*/
+
+    .nosotros section img{
+        width: 300px;
+        padding-top: 10px;
+    }
+
+    .nosotros article{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+
+    /* ---------- PAGINA CONTACTO -------*/
+    .section__formulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* ---------- PAGINA PRODUCTOS --------*/
+
+    .main__productos div img{
+        width: 315px;
+    }
+
+    .main__productos section article{
+        width: 250px
+    }
+    .main__productos div p{
+        justify-content: center;
+    }
+}
+        
+    /* ---------- RD TABLET ---------*/
+
