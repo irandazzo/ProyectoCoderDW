@@ -5,12 +5,12 @@
 }
 
 /* --------- HEADER -----------*/
-.header h1{
+/*.header h1{
     display: flex;
     justify-content: left;
     color: #005733;
     align-items: center;
-}
+}*/
 .logo{
     display: flex;
     justify-content: left;
@@ -198,6 +198,14 @@
     margin: 10px;
 }
 
+.imagenesventa{
+    transition: all 2s;
+}
+
+.imagenesventa img:hover{
+    height: 250px;
+    width: 250px;
+}
 
 
 .main__productos div p{
@@ -264,9 +272,14 @@
   
     .footer { 
       grid-area: footer;
-      background-color:  #005733;
-    
+     /* background-color:  #005733;
+    */
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(30,124,5,1) 100%);
     }
+
+    
+    
   
 
 /*----------- RD CELULAR ----------*/
@@ -291,7 +304,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    
     }
 
     .footer li{
