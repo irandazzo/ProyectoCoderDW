@@ -5,11 +5,17 @@
 }
 
 /* --------- HEADER -----------*/
-.header h1{
+/*.header h1{
     display: flex;
-    justify-content: center;
-    color: white;
+    justify-content: left;
+    color: #005733;
     align-items: center;
+}*/
+.logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 150px;
 }
 
 .header ul{
@@ -18,13 +24,17 @@
     text-decoration: none;
     list-style-type: none;
     font-style: inherit;
-    justify-content: space-around;
+    justify-content: right;
     padding: 20px;
+}
+
+.header li{
+    padding: 20px
 }
 
 .header a{
     text-decoration: none;
-    color: white;
+    color: #005733;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -200,6 +210,15 @@
     margin: 10px;
 }
 
+.imagenesventa{
+    transition: all 2s;
+}
+
+.imagenesventa img:hover{
+    height: 250px;
+    width: 250px;
+}
+
 /* ---------- FOOTER -----------*/
 .footer ul{
     display: flex;
@@ -207,7 +226,7 @@
     text-decoration: none;
     list-style-type: none;
     font-style: inherit;
-    justify-content: space-around;
+    justify-content: right;
     padding-top: 50px;
 }
 .footer a{
@@ -244,7 +263,7 @@
   
     .header { 
       grid-area: header;
-      background-color: #005733; 
+      background-color: white; 
     }
   
     .main { 
@@ -254,7 +273,10 @@
   
     .footer { 
       grid-area: footer;
-      background-color: #005733;
+      /*background-color:  #005733;
+    */
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(30,124,5,1) 100%);
     }
   
 
