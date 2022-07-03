@@ -5,12 +5,12 @@
 }
 
 /* --------- HEADER -----------*/
-/*.header h1{
+.header h1{
     display: flex;
     justify-content: left;
     color: #005733;
     align-items: center;
-}*/
+}
 .logo{
     display: flex;
     justify-content: left;
