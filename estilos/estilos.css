@@ -12,6 +12,21 @@
     align-items: center;
 }
 
+.header .container-fluid{
+    background-color: #005733;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+.navbar{
+    display: flex;
+    justify-content: end;
+}
+
 .header ul{
     display: flex;
     color: white;
@@ -19,7 +34,7 @@
     list-style-type: none;
     font-style: inherit;
     justify-content: space-around;
-    padding: 20px;
+    padding: 10px;
 }
 
 .header a{
@@ -37,6 +52,8 @@
     justify-content: center;
     
 }
+
+
 
 .producto1{
     display: flex;
