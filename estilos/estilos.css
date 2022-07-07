@@ -65,9 +65,17 @@
 
 
 .btn-primary{
+    display: flex;
+    justify-content: center;
     background-color: #005733;
     border: #005733;
-    
+    font-size: medium;
+    font-style: italic;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: black;
 }
 .producto1{
     display: flex;
@@ -334,6 +342,13 @@
         justify-content: center;
     }
     /* ------- PAGINA INDEX ------*/   
+    
+    .portada{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
     .bannerprincipal{
         display: none;
     }
