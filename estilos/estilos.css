@@ -19,13 +19,13 @@
     color: white;
 }
 
-
-
-
-.navbar{
-    display: flex;
-    justify-content: end;
+.btn-outline-success{
+    background-color:white;
+    font-weight: 600;
 }
+
+
+
 
 .header ul{
     display: flex;
@@ -40,7 +40,7 @@
 .header a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
@@ -53,8 +53,22 @@
     
 }
 
+.portada{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card{
+    color: #005733;
+}
 
 
+.btn-primary{
+    background-color: #005733;
+    border: #005733;
+    
+}
 .producto1{
     display: flex;
     justify-content: center;
@@ -112,6 +126,7 @@
     align-items: center;
     padding-left: 30px;
 }
+
 
 /* --------- PAGINA NOSOTROS ----------*/
 .nosotros section{
@@ -177,12 +192,21 @@
 }
 
 .formulario{
+    display: flex;
     color: #005733;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     padding: 10px;
     margin: 20px;
+}
+
+.form-group button{
+    background-color: #005733;
+    border: #005733;
+    padding-top: 10px;
+    margin-top: 10px;
+
 }
 
 .dudas{
@@ -246,6 +270,7 @@
 
 }
 
+
 /* ---------- GRILLA ------------*/
 .contenedor {  
     display: grid;
@@ -261,7 +286,7 @@
   
     .header { 
       grid-area: header;
-      background-color: #005733; 
+      /*background-color: #005733;*/ 
     }
   
     .main { 
