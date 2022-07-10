@@ -1,0 +1,111 @@
+/* --------------- HEADER CONTACTO --------------*/
+.header .container-fluid {
+  background-color: #005733;
+  display: flex;
+  justify-content: center;
+  color: white; }
+
+.header ul {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-style: inherit;
+  justify-content: space-around;
+  padding: 10px; }
+
+.header a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold; }
+
+.btn-outline-success {
+  background-color: white;
+  font-weight: 600; }
+
+/* ----------- FORMULARIO DE CONTACTO -----------*/
+.section__formulario {
+  display: flex;
+  justify-content: center; }
+
+.formulario {
+  display: flex;
+  color: #005733;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding: 10px;
+  margin: 20px; }
+
+.form-group button {
+  background-color: #005733;
+  border: #005733;
+  padding-top: 10px;
+  margin-top: 10px;
+  justify-content: center; }
+
+.dudas {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #005733;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold; }
+
+/* --------- FOOTER CONTACTO  ----------*/
+.footer {
+  grid-area: footer;
+  background-color: #005733; }
+  .footer ul {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-style: inherit;
+    justify-content: space-around;
+    padding-top: 50px; }
+  .footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 10px; }
+  .footer li {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: center; }
+
+/* ----------RD CELULAR PAGINA CONTACTO  ----------*/
+@media screen and (max-width: 500px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr 1fr 1fr);
+    grid-template-areas: "header"  "main"  "footer"; }
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .footer li {
+    display: flex;
+    justify-content: center; }
+  .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .form-group button {
+    background-color: #005733;
+    border: #005733;
+    padding-top: 10px;
+    margin-top: 10px;
+    justify-content: center; } }

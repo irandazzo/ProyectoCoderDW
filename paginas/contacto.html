@@ -7,12 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
 
-    <link rel="stylesheet" href="../estilos/estilos.css">
-    
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="../estilos/bootstrap.min.css">
+    <link rel="stylesheet" href="../estilos/main.css">
+
 </head>
 
 <body id="arriba" class="contenedor">
@@ -23,12 +20,39 @@
 
         <!--<h1 class="logo">Contacto</h1>-->
 
-            <div class="logo">
-                <img src="../multimedia/ideasparasoniarlogo.png" alt="logo" width="250px">
+        <nav class="navbar navbar-expand-lg bg-light navegacion">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../multimedia/ideasparasoniarlogo.png" alt="logo" width="100px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="faqs.html">Preguntas Frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscador</button>
+                  </form>
+              </div>
             </div>
+          </nav>    
         
-
-            <nav class="navegacion">
+        
+        <!--<nav class="navegacion">
                 <ul>
                     <li class="animate__animated animate__bounce"> <a href="../index.html">Inicio</a></li>
                     <li class="animate__animated animate__bounce"> <a href="productos.html">Productos</a></li>
@@ -36,7 +60,7 @@
                     <li class="animate__animated animate__bounce"> <a href="faqs.html">Preguntas Frecuentes</a></li>
 
                 </ul>
-            </nav>
+            </nav>-->
 
     </header>
 
@@ -44,8 +68,76 @@
 
     <section class="section__formulario">
     
-        <h2 class="dudas">¿Tenés dudas? ¡Escribinos!</h2>
-            <form class="formulario">
+        <!--<h2 class="dudas">¿Tenés dudas? ¡Escribinos!</h2>-->
+            
+        <div class="formulario">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-sm">
+                        <form class="form-horizontal" method="post">
+                            <fieldset>
+                                <legend class="text-center header">¿Tenés dudas? Escribinos!</legend>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-12">
+                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-12">
+                                        <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                    <div class="col-md-12">
+                                        <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-12">
+                                        <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Escriba aquí su comentario" rows="7"></textarea>
+                                    </div>
+                                </div>
+        
+                                <div class="form-group col-md-12">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!--<form class="formulario">
                 <label for="nombre">Nombre:</label>
                 <input type="text" placeholder="Ingrese su nombre">
                 <br>
@@ -70,7 +162,7 @@
                 
                 <input type="reset" value="Limpiar Formulario">
                 </div>
-            </form>
+            </form>-->
     </section>
 
     <!----------------------- FOOTER -------------------------------->
@@ -87,7 +179,7 @@
 
         </div>
 
-        <div>
+        <div >
             <ul class="redes">
                 <a class="animate__animated animate__pulse" href="www.facebook.com/ideasparasoniar">
                     <img src="../multimedia/logofacebook.png" alt="Facebook" width="40px"></a>
@@ -97,7 +189,6 @@
 
                 <a class="animate__animated animate__pulse" href="https://api.whatsapp.com/send/?phone=5491157983969&text&app_absent=0">
                     <img src="../multimedia/logowhatsapp.png" alt="whatsapp" width="40px"></a>
-
             </ul>
             
             <li class="footer__derechos">Avenida San Pedrito 198, Flores, CABA</li>

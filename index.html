@@ -7,36 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ideas para Soñar</title>
 
-    <link rel="stylesheet" href="estilos/bootstrap.min.css">
     
     <link rel="shortcut icon" href="multimedia/ideasparasoniarlogo.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="estilos/bootstrap.min.css">
     <link rel="stylesheet" href="estilos/estilos.css">
-
-    <link rel="stylesheet"
+    <link
+    rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-
-    <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    -->
-</head>    
-
+  />
 <body id="arriba" class="contenedor">
     <!------------------------- HEADER ----------------------->
 
     <header class="header">
-        
-        <div class="logo">
-            <img src="./multimedia/ideasparasoniarlogo.png" alt="logo" width="250px">
-        </div>
-        
         <!--<h1 class="logo">
             Ideas Para Soñar
         </h1>-->
 
-        <nav class="navegacion">
+        <nav class="navbar navbar-expand-lg bg-light navegacion">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="index.html">
+                <img src="../PROYECTO VALIDO/multimedia/ideasparasoniarlogo.png" alt="logo" width="100px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active animate__animated animate__pulse" aria-current="page" href="../PROYECTO VALIDO/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link animate__animated animate__pulse" href="../PROYECTO VALIDO/paginas/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link animate__animated animate__pulse" href="../PROYECTO VALIDO/paginas/faqs.html">Preguntas Frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link animate__animated animate__pulse" href="../PROYECTO VALIDO/paginas/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link animate__animated animate__pulse" href="../PROYECTO VALIDO/paginas/contacto.html">Contacto</a>
+                  </li> 
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscador</button>
+                  </form>
+              </div>
+            </div>
+          </nav>
+        <!--<nav class="navegacion">
             <ul>
                 <li class="animate__animated animate__bounce"><a href="index.html">Inicio</a></li>
                 <li class="animate__animated animate__bounce"><a href="paginas/productos.html">Productos</a></li>
@@ -44,7 +65,7 @@
                 <li class="animate__animated animate__bounce"><a href="paginas/faqs.html">Preguntas Frecuentes</a></li>
                 <li class="animate__animated animate__bounce"><a href="paginas/contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </nav>-->
 
     </header>
 
@@ -53,10 +74,72 @@
     <main class="main">
 
         <section>
-            <div class="bannerprincipal">
+            <!--<div class="bannerprincipal">
                 <img src="multimedia/bannerprincipal.png" alt="bannerprincipal" width="1350px" class="imagen">
+            </div>-->
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../PROYECTO VALIDO/multimedia/bannerprincipal.png" class="d-block w-100" alt="principal">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../PROYECTO VALIDO/multimedia/bannerproductos.png" class="d-block w-100" alt="productos">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../PROYECTO VALIDO/multimedia/bannersommier.jpg" class="d-block w-100" alt="sommier">
+                  </div>
+                </div>
+              </div>
+            
+
+            <div class="portada">
+              <div class="card" style="width: 18rem;">
+                <img src="../PROYECTO VALIDO/multimedia/colchonsublime.png" class="card-img-top" alt="sublime">
+                <div class="card-body">
+                  <h5 class="card-title">Colchón Sublime</h5>
+                  <p class="card-text">Colchón de resortes individuales (pocket) de máxima calidad, que te brinda un descanso soñado y sin interrupciones.</p>
+                  <a href="#" class="btn btn-primary">Más info</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="../PROYECTO VALIDO/multimedia/colchonexclusive.png" class="card-img-top" alt="exclusive">
+                <div class="card-body">
+                  <h5 class="card-title">Colchón Exclusive</h5>
+                  <p class="card-text">Colchón de espuma de alta densidad ideal para un descanso saludable, placentero y con un plus de suavidad en el apoyo.</p>
+                  <a href="#" class="btn btn-primary">Más info</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="../PROYECTO VALIDO/multimedia/conjuntotamesis.png" class="card-img-top" alt="compact">
+                <div class="card-body">
+                  <h5 class="card-title">Conjunto Támesis</h5>
+                  <p class="card-text">Colchón de espuma de alta densidad y base sommier ideales para un descanso saludable y placentero.</p>
+                  <a href="#" class="btn btn-primary">Más info</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="../PROYECTO VALIDO/multimedia/conjuntotamesis.png" class="card-img-top" alt="compact">
+                <div class="card-body">
+                  <h5 class="card-title">Conjunto Támesis</h5>
+                  <p class="card-text">Colchón de espuma de alta densidad y base sommier ideales para un descanso saludable y placentero.</p>
+                  <a href="#" class="btn btn-primary">Más info</a>
+                </div>
+              </div>
+              
+            
             </div>
-            <article>
+            
+            
+            <div class="bannercannon">
+                <img src="../PROYECTO VALIDO/multimedia/Banner Cannon sin fondo.png" alt="banner">
+            </div>
+
+            
+            <!--<article>
                 <div class="producto1">
                     <P class="colchdescr1">Colchón Sublime</P>
                     <div>
@@ -83,7 +166,7 @@
 
 
                 </div>
-            </article>
+            </article>-->
         </section>
 
     </main>

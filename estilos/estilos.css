@@ -5,11 +5,18 @@
 }
 
 /* --------- HEADER -----------*/
-.header h1{
+/*.header h1{
     display: flex;
     justify-content: left;
     color: #005733;
     align-items: center;
+}*/
+
+.header .container-fluid{
+    background-color: #005733;
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 .logo{
     display: flex;
@@ -18,14 +25,23 @@
     padding-left: 150px;
 }
 
+.btn-outline-success{
+    background-color:white;
+    font-weight: 600;
+}
+
+
+
+
+
 .header ul{
     display: flex;
     color: white;
     text-decoration: none;
     list-style-type: none;
     font-style: inherit;
-    justify-content: right;
-    padding: 20px;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 .header li{
@@ -34,8 +50,8 @@
 
 .header a{
     text-decoration: none;
-    color: #005733;
-    font-size: 20px;
+    color: white;
+    font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
@@ -48,7 +64,43 @@
     
 }
 
-.producto1{
+.carrusel{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+.portada{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card{
+    color: #005733;
+}
+
+
+.btn-primary{
+    display: flex;
+    justify-content: center;
+    background-color: #005733;
+    border: #005733;
+    font-size: medium;
+    
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: black;
+}
+
+.bannercannon{
+    display: flex;
+    justify-content: center;
+    width: 1100px;
+    margin: auto;
+}
+/*.producto1{
     display: flex;
     justify-content: center;
     color: #005733;
@@ -105,6 +157,7 @@
     align-items: center;
     padding-left: 30px;
 }
+*/
 
 /* --------- PAGINA NOSOTROS ----------*/
 .nosotros section{
@@ -164,18 +217,29 @@
 }
 
 /* ---------- PAGINA CONTACTO --------*/
+/*
 .section__formulario{
     display: flex;
     justify-content: center;
 }
 
 .formulario{
+    display: flex;
     color: #005733;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     padding: 10px;
     margin: 20px;
+}
+
+.form-group button{
+    background-color: #005733;
+    border: #005733;
+    padding-top: 10px;
+    margin-top: 10px;
+    justify-content: center;
+
 }
 
 .dudas{
@@ -186,7 +250,7 @@
     color: #005733;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-}
+}*/
 
 /* ----------- PAGINA PRODUCTOS -----------*/
 
@@ -237,6 +301,8 @@
     margin: 10px;
 }
 
+
+
 .footer li{
     display: flex;
     color: white;
@@ -246,6 +312,7 @@
     justify-content: center;
 
 }
+
 
 /* ---------- GRILLA ------------*/
 .contenedor {  
@@ -262,7 +329,7 @@
   
     .header { 
       grid-area: header;
-      background-color: white; 
+      /*background-color: #005733;*/ 
     }
   
     .main { 
@@ -300,6 +367,8 @@
         align-items: center;
     }
 
+  
+
     .footer ul{
         display: flex;
         flex-direction: column;
@@ -313,12 +382,32 @@
     .redes{
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     /* ------- PAGINA INDEX ------*/   
-    .bannerprincipal{
-        display: none;
+    
+    .portada{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .producto1{
+    
+    .carousel slide{
+        width: 50%;
+    }
+
+    .bannercannon{
+        display:flex;
+        flex-direction: column;
+        width: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*.bannerprincipal{
+        display: none;
+    }*/
+    /*.producto1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -338,7 +427,7 @@
 
     .producto2 img{
         width: 250px;
-    }
+    }*/
 
     /* --------- PAGINA FAQS ---------*/
 
