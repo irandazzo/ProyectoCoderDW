@@ -27,6 +27,7 @@
 
 
 
+
 .header ul{
     display: flex;
     color: white;
@@ -282,6 +283,8 @@
     margin: 10px;
 }
 
+
+
 .footer li{
     display: flex;
     color: white;
@@ -339,6 +342,8 @@
         flex-direction: column;
         align-items: center;
     }
+
+  
 
     .footer ul{
         display: flex;

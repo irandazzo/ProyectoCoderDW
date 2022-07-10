@@ -100,7 +100,10 @@
 	.contenedor {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(1fr 1fr 1fr);
-		grid-template-areas: "header" "main" "footer";
+		grid-template-areas: 
+        "header" 
+        "main" 
+        "footer";
 	}
     .header {
         ul {
