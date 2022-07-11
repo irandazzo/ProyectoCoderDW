@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* --------------- HEADER CONTACTO --------------*/
 .header {
 	.container-fluid {
@@ -112,7 +118,7 @@
             align-items: center;
         }
     }
-    .footer {
+	.footer {
         ul {
             display: flex;
             flex-direction: column;

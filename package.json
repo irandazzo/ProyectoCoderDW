@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "proyectocoderdw",
-=======
   "name": "proyectocoderdw-1",
->>>>>>> bootstrap
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,10 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss estilos/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-<<<<<<< HEAD
-
-=======
->>>>>>> bootstrap
   },
   "repository": {
     "type": "git",
