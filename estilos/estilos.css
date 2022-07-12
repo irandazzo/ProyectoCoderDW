@@ -66,23 +66,14 @@
     justify-content: center;
     
 }
-
-.carrusel{
-    display: flex;
-    justify-content: center;
-    margin-top: auto;
-}
 .portada{
     display: flex;
     justify-content: center;
     padding: 20px;
 }
-
 .card{
     color: #005733;
 }
-
-
 .btn-primary{
     display: flex;
     justify-content: center;
@@ -98,11 +89,11 @@
 }
 
 .bannercannon{
-    display: flex;
-    justify-content: center;
-    width: 1100px;
+    display: inline-block;
+    justify-content: left;
+    width: 200px;
     margin: auto;
-}
+}*/
 /*.producto1{
     display: flex;
     justify-content: center;
@@ -303,7 +294,7 @@
     flex-direction: column;
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     padding: 5px;
@@ -371,26 +362,42 @@
         flex-direction: column;
         align-items: center;
     }
-    .footer ul{
+
+    .footer ul a img{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
     }
 
-    .footer li{
+    .navegacion ul{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: column;
+        flex-direction: column;
+    }
+
+    .redes div ul a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*.footer li a{
+        display: flex;
+        flex-direction: column;
+        
         font-size: small;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 100;
         text-align: center;
-    }
-    .redes{
+    }*/
+
+    .redes ul a{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items:center;
+        justify-content: center;
+        align-items: center;
+        
+        
     }
     /* ------- PAGINA INDEX ------*/   
     
@@ -398,16 +405,19 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-left: 10px;
     }
     
-    .carousel slide{
+    .carousel-inner{
+        display: flex;
+        flex-wrap: wrap;
         width: 50%;
+        justify-content: center;
     }
 
-    .bannercannon{
-        display:flex;
-        flex-direction: column;
-        width: 10%;
+    .bannercannon img{
+        display: flex;
+        width: 50%;
         justify-content: center;
         align-items: center;
     }
