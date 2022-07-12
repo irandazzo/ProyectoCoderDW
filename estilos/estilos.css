@@ -218,41 +218,43 @@
 
 /* ---------- PAGINA CONTACTO --------*/
 .formulario {
-    display: block;
+    display: inline-block;
     width: 15rem;
     background-color: #005733;
     padding: 20px;
-    margin: auto;
-    margin-top: 6rem;
     margin-bottom: 20px;    
     border-radius: 50px;
     color: white;
-    box-shadow: red;
-    justify-content: space;
+    
 }
+.seccionformulario{
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
 .form-group button{
-    display: flex;
-    flex-direction: column;
+    display: inline;
     background-color: #005733;
     border: white;
-    padding-top: 10px;
-    margin-top: 10px;
-    padding: 10px;
     justify-content: center;
     align-items: center;
 }
-.ubicacion{
-    display: flex;
-    justify-content:space-around;
-    margin-top: 100px;
+.ubicacionContacto{
+    display: inline;
     color: #005733;
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
+    text-align: center;
+    justify-content:space-between;
 }
 .mapa{
-    text-align: center;
+    display: inline;
     padding: 10px;
+
 }
+
 
 /* ----------- PAGINA PRODUCTOS -----------*/
 
@@ -312,15 +314,18 @@
     justify-content: center;
     flex-direction: column;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     list-style-type: none;
     justify-content: center;
+    text-align: center;
+    padding: 5px;
 }
 .div redes{
     display: flex;
     flex-direction: column;
-    align-items: right;
+    justify-content: center;
+    padding: 5px;
 }
 
 
@@ -386,7 +391,6 @@
         flex-direction: column;
         justify-content: space-around;
         align-items:center;
-        padding: 0px;
     }
     /* ------- PAGINA INDEX ------*/   
     
@@ -479,15 +483,19 @@
     .ubicacionContacto{
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
+    .ubicacion{
+        justify-content: space-around;
+    }
     .mapa{
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: left;
-        width: 100px;
-        padding-right: 150px;
+        flex-direction: row;
+        justify-content: center;
+        width: 50px;
+        margin: auto;
+        padding-right: 20px;
     }
 
     
