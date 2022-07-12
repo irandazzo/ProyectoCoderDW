@@ -160,7 +160,7 @@
 */
 
 /* --------- PAGINA NOSOTROS ----------*/
-/*.nosotros section{
+.nosotros section{
     display: flex;
     flex-direction: column;
     align-items: center ;
@@ -180,10 +180,10 @@
     display: flex;
     justify-content: right;
     padding-left: 30px;
-}*/
+}
 
 /* ---------- PAGINA FAQS ---------*/
-/*.mainfaqs{
+.mainfaqs{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -214,10 +214,10 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     padding: 5px;
-}*/
+}
 
 /* ---------- PAGINA CONTACTO --------*/
-/*
+
 .section__formulario{
     display: flex;
     justify-content: center;
@@ -250,7 +250,7 @@
     color: #005733;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-}*/
+}
 
 /* ----------- PAGINA PRODUCTOS -----------*/
 
