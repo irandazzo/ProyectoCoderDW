@@ -14,13 +14,20 @@
 
 .header .container-fluid{
     background-color: #005733;
-    display: flex;
+    padding-left: 20px;
+    margin-top: 0px;
+    /*display: flex;
     justify-content: center;
-    color: white;
+    color: white;*/
 }
+.container-fluid button{
+    border-radius: 2rem;
+    font-size: 20px;
+}
+
 .logo{
     display: flex;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
     padding-left: 150px;
 }
@@ -30,10 +37,6 @@
     font-weight: 600;
 }
 
-
-
-
-
 .header ul{
     display: flex;
     color: white;
@@ -41,11 +44,11 @@
     list-style-type: none;
     font-style: inherit;
     justify-content: space-around;
-    padding: 10px;
+    padding: 5px;
 }
 
 .header li{
-    padding: 20px
+    padding: 5px
 }
 
 .header a{
@@ -202,11 +205,8 @@
 .mainfaqs article p{
     padding: 5px;
 }  
-.mapa{
-    text-align: center;
-    padding-bottom: 10px;
-}
 
+/*
 .mapa p{
     text-align: center;
     color: #005733;
@@ -214,42 +214,44 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     padding: 5px;
-}
+}*/
 
 /* ---------- PAGINA CONTACTO --------*/
-
-.section__formulario{
-    display: flex;
-    justify-content: center;
-}
-
-.formulario{
-    display: flex;
-    color: #005733;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    padding: 10px;
-    margin: 20px;
-}
-
-.form-group button{
+.formulario {
+    display: block;
+    width: 15rem;
     background-color: #005733;
-    border: #005733;
+    padding: 20px;
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 20px;    
+    border-radius: 50px;
+    color: white;
+    box-shadow: red;
+    justify-content: space;
+}
+.form-group button{
+    display: flex;
+    flex-direction: column;
+    background-color: #005733;
+    border: white;
     padding-top: 10px;
     margin-top: 10px;
+    padding: 10px;
     justify-content: center;
-
-}
-
-.dudas{
-    display: flex;
-    justify-content: center;
-    text-align: center;
     align-items: center;
+}
+.ubicacion{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 100px;
     color: #005733;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
     font-weight: bold;
+}
+.mapa{
+    text-align: center;
+    padding: 10px;
 }
 
 /* ----------- PAGINA PRODUCTOS -----------*/
@@ -291,18 +293,24 @@
     list-style-type: none;
     font-style: inherit;
     align-items: left;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 .footer a{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    margin: 10px;
+    padding: 5px;
+    text-align: center;
 }
 .footer li{
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -327,28 +335,19 @@
       "header header"
       "main main"
       "footer footer";
-  }
-  
+}
     .header { 
       grid-area: header;
       /*background-color: #005733;*/ 
     }
-  
     .main { 
       grid-area: main;
       background-color: white; 
     }
-  
     .footer { 
       grid-area: footer;
       background-color:  #005733;
-    /*background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(30,124,5,1) 100%);
-    */}
-
-    
-    
-  
+}
 
 /*----------- RD CELULAR ----------*/
 
@@ -375,12 +374,19 @@
 
     .footer li{
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: column;
+        font-size: small;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+        text-align: center;
     }
     .redes{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:center;
+        padding: 0px;
     }
     /* ------- PAGINA INDEX ------*/   
     
@@ -441,20 +447,8 @@
         width: 300px;
     }
 
-    .mapa p{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 
-    .mapa{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: left;
-        width: 100px;
-        padding-right: 300px;
-    }
+
 
     /* -------- PAGINA NOSOTROS -------*/
 
@@ -472,11 +466,31 @@
     
 
     /* ---------- PAGINA CONTACTO -------*/
-    .section__formulario{
+    /*.section__formulario{
+        display: flex;
+        flex-direction: column;
+    }*/
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ubicacionContacto{
         display: flex;
         flex-direction: column;
     }
 
+    .mapa{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: left;
+        width: 100px;
+        padding-right: 150px;
+    }
+
+    
 
     /* ---------- PAGINA PRODUCTOS --------*/
 
