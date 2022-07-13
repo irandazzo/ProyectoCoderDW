@@ -69,12 +69,16 @@
 .portada{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
+
 }
 .card{
     color: #005733;
     margin: 30px;
     border-color: #005733;
+    display: flex;
+    flex-direction: column;
 }
 .btn-primary{
     display: flex;
@@ -84,9 +88,6 @@
     font-size: medium;
 }
 
-.carousel-inner{
-
-}
 
 .btn-primary:hover{
     background-color: white;
@@ -323,16 +324,25 @@
     
     .carousel-inner{
         display: flex;
-        flex-direction: row;
-        width: 75%%;
-        justify-content: center;
+        flex-wrap: wrap;
+        width: 90%;
+        
     }
 
-    .bannercannon img{
+    .enviogratis img{
         display: flex;
-        width: 50%;
+        width: 30%;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
+    }
+
+    .card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+
     }
 
     /*.bannerprincipal{
