@@ -73,6 +73,8 @@
 }
 .card{
     color: #005733;
+    margin: 30px;
+    border-color: #005733;
 }
 .btn-primary{
     display: flex;
@@ -80,7 +82,10 @@
     background-color: #005733;
     border: #005733;
     font-size: medium;
-    
+}
+
+.carousel-inner{
+
 }
 
 .btn-primary:hover{
@@ -89,70 +94,9 @@
 }
 
 .bannercannon{
-    display: inline-block;
-    justify-content: left;
-    width: 200px;
-    margin: auto;
-}*/
-/*.producto1{
-    display: flex;
-    justify-content: center;
-    color: #005733;
-    font-size: 20px;
-    font-weight: bold;
-    align-items: center;
-    padding-right: 30px;
-    margin-left: 30px;
+   display: block;
+   padding: 20px;
 }
-
-.producto2{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    color: #005733;
-    font-weight: bold;
-    align-items: center;
-    padding-right: 30px;
-    margin-left: 30px;
-}
-
-.colchdescr1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 30px;
-
-
-}
-
-.colchdescr2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 30px;
-}
-
-.detallecolchon1{
-    display: flex;
-    color: #005733;
-    font-size: 15px;
-    font-weight: bold;
-    justify-content: right;
-    align-items: center;
-    padding-left: 30px;
-}
-
-.detallecolchon2{
-    display: flex;
-    color: #005733;
-    font-size: 15px;
-    font-weight: bold;
-    justify-content: right;
-    align-items: center;
-    padding-left: 30px;
-}
-*/
-
 /* --------- PAGINA NOSOTROS ----------*/
 .nosotros section{
     display: flex;
@@ -181,7 +125,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
 }
 
 .mainfaqs article{
@@ -196,17 +139,6 @@
 .mainfaqs article p{
     padding: 5px;
 }  
-
-/*
-.mapa p{
-    text-align: center;
-    color: #005733;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    padding: 5px;
-}*/
-
 /* ---------- PAGINA CONTACTO --------*/
 .formulario {
     display: inline-block;
@@ -216,6 +148,8 @@
     margin-bottom: 20px;    
     border-radius: 50px;
     color: white;
+    grid-area: formulario;
+    
     
 }
 .seccionformulario{
@@ -241,10 +175,14 @@
     justify-content:space-between;
 }
 .mapa{
-    display: inline;
+    display: grid;
     padding: 10px;
+    grid-area: mapa;
+    justify-content: space-between;
+    
 
 }
+
 
 
 /* ----------- PAGINA PRODUCTOS -----------*/
@@ -362,43 +300,18 @@
         flex-direction: column;
         align-items: center;
     }
-
-    .footer ul a img{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 10px;
-    }
-
-    .navegacion ul{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .redes div ul a{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    /*.footer li a{
+    .footer ul{
         display: flex;
         flex-direction: column;
         
-        font-size: small;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 100;
-        text-align: center;
-    }*/
-
-    .redes ul a{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        
     }
+.redes a{
+    display:flex;
+    flex-direction: row;
+
+}
+
+
     /* ------- PAGINA INDEX ------*/   
     
     .portada{
@@ -410,8 +323,8 @@
     
     .carousel-inner{
         display: flex;
-        flex-wrap: wrap;
-        width: 50%;
+        flex-direction: row;
+        width: 75%%;
         justify-content: center;
     }
 
@@ -488,6 +401,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-content: center;
+        margin-left: 10px;
+        
     }
 
     .ubicacionContacto{
@@ -501,13 +417,21 @@
     }
     .mapa{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         width: 50px;
-        margin: auto;
-        padding-right: 20px;
+        
+        
     }
-
+    .paginaformulario{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: space-between;
+    position: relative;
+    grid-template-areas:
+    "formulario mapa";
+    }
     
 
     /* ---------- PAGINA PRODUCTOS --------*/
