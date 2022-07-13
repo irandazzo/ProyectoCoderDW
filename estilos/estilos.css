@@ -47,6 +47,14 @@
     padding: 5px;
 }
 
+.header form{
+    display: flex;
+    justify-content: end;
+    width: 350px;
+    align-items: center;
+
+}
+
 .header li{
     padding: 5px
 }
@@ -58,6 +66,9 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
+
+
+
 
 /* ----------- MAIN INDEX ---------*/
 .main section{
@@ -102,13 +113,15 @@
 .nosotros section{
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
+    
 }
 .nosotros article{
     display: flex;
     justify-content: center;
+    text-align: center;
     color: #005733;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     padding-left: 30px;
@@ -117,7 +130,7 @@
 
 .nosotros img{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     padding-left: 30px;
 }
 
@@ -126,20 +139,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 20px;
 }
-
-.mainfaqs article{
+.pregunta{
     color: #005733;
-    font-size: 20px;
+    font-size: larger;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-weight: 850;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
 }
 
-.mainfaqs article p{
-    padding: 5px;
-}  
+.respuesta{
+    color: #005733;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    text-align: left;
+    padding-left:30px;
+}
 /* ---------- PAGINA CONTACTO --------*/
 .formulario {
     display: inline-block;
@@ -354,18 +373,15 @@
     justify-content: center;
     padding: 15px;
 }
-
     .producto2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 15px;
     }
-
     .producto1 img{
         width: 250px;
     }
-
     .producto2 img{
         width: 250px;
     }*/
@@ -412,7 +428,7 @@
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        margin-left: 10px;
+        margin-left: 20px;
         
     }
 
@@ -427,23 +443,13 @@
     }
     .mapa{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
         width: 50px;
         
         
     }
-    .paginaformulario{
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(2, 50%);
-    justify-content: space-between;
-    position: relative;
-    grid-template-areas:
-    "formulario mapa";
-    }
-    
-
     /* ---------- PAGINA PRODUCTOS --------*/
 
     .main__productos div img{
@@ -459,4 +465,3 @@
 }
         
     /* ---------- RD TABLET ---------*/
-
