@@ -35,8 +35,13 @@
 .btn-outline-success{
     background-color:white;
     font-weight: 600;
+    color:#005733;
 }
 
+.btn-outline-success:hover{
+    background-color:#005733;
+    color: white;
+}
 .header ul{
     display: flex;
     color: white;
@@ -66,9 +71,6 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
-
-
-
 
 /* ----------- MAIN INDEX ---------*/
 .main section{
@@ -141,6 +143,11 @@
     justify-content: center;
     padding-bottom: 20px;
 }
+.mainfaqs img{
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
 .pregunta{
     color: #005733;
     font-size: larger;
@@ -160,50 +167,49 @@
     padding-left:30px;
 }
 /* ---------- PAGINA CONTACTO --------*/
+.flexbox-container {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    width:100% ;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
 .formulario {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 15rem;
     background-color: #005733;
     padding: 20px;
     margin-bottom: 20px;    
     border-radius: 50px;
     color: white;
-    grid-area: formulario;
-    
-    
-}
-.seccionformulario{
-    display: inline;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
-
-.form-group button{
-    display: inline;
-    background-color: #005733;
-    border: white;
-    justify-content: center;
-    align-items: center;
 }
 .ubicacionContacto{
-    display: inline;
+    display: flex;
+    flex-direction: column;
     color: #005733;
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
+}
+.ubicacionContacto h2{
     text-align: center;
-    justify-content:space-between;
+    align-content: center;
 }
 .mapa{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-    grid-area: mapa;
-    justify-content: space-between;
-    
-
+    justify-content: center;
 }
 
-
+.form-group button{
+    border: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
 
 /* ----------- PAGINA PRODUCTOS -----------*/
 
@@ -419,37 +425,21 @@
     
 
     /* ---------- PAGINA CONTACTO -------*/
-    /*.section__formulario{
+    .flexbox-container{
         display: flex;
         flex-direction: column;
-    }*/
+    }
     .formulario{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
-        align-content: center;
         margin-left: 20px;
-        
+    }
+    .mapa iframe{
+        width: 90%;
+        margin-left: 15px;
     }
 
-    .ubicacionContacto{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .ubicacion{
-        justify-content: space-around;
-    }
-    .mapa{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        
-        
-    }
     /* ---------- PAGINA PRODUCTOS --------*/
 
     .main__productos div img{
