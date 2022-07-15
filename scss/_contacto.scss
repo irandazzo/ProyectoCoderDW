@@ -1,16 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* --------------- HEADER CONTACTO --------------*/
+/* ---------- HEADER -----------*/
 .header {
 	.container-fluid {
 		background-color: #005733;
-		display: flex;
-		justify-content: center;
-		color: white;
+		padding-left: 20px;
+		margin-top: 0px;
 	}
 	ul {
 		display: flex;
@@ -19,129 +12,205 @@
 		list-style-type: none;
 		font-style: inherit;
 		justify-content: space-around;
-		padding: 10px;
+		padding: 5px;
+	}
+	form {
+		display: flex;
+		justify-content: end;
+		width: 350px;
+		align-items: center;
+	}
+	li {
+		padding: 5px;
 	}
 	a {
 		text-decoration: none;
 		color: white;
-		font-size: 20px;
+		font-size: 15px;
 		font-family: 'Times New Roman', Times, serif;
 		font-weight: bold;
 	}
+}
+.container-fluid {
+	button {
+		border-radius: 2rem;
+		font-size: 20px;
+	}
+}
+.logo {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	padding-left: 150px;
 }
 .btn-outline-success {
 	background-color: white;
 	font-weight: 600;
+	color: #005733;
+	&:hover {
+		background-color: #005733;
+		color: white;
+	}
 }
-
-/* ----------- FORMULARIO DE CONTACTO -----------*/
-
-.section__formulario {
+/*----------- PAGINA CONTACTO -------------*/
+.flexbox-container {
+	display: -ms-flex;
+	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
+	width: 100%;
+	padding: 20px;
+	justify-content: space-evenly;
 }
 .formulario {
 	display: flex;
+	flex-direction: column;
+	width: 15rem;
+	background-color: #005733;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 50px;
+	color: white;
+}
+.btn-lg {
+	background-color: white;
+	border: none;
 	color: #005733;
-	font-size: 20px;
+	padding-top: 10px;
+	margin: 10px;
+	&:hover {
+		background-color: #005733;
+		border: none;
+		color: white;
+	}
+}
+.ubicacionContacto {
+	display: flex;
+	flex-direction: column;
+	color: #005733;
 	font-family: 'Times New Roman', Times, serif;
 	font-weight: bold;
+	h2 {
+		text-align: center;
+		align-content: center;
+	}
+}
+.mapa {
+	display: flex;
+	flex-direction: column;
 	padding: 10px;
-	margin: 20px;
+	justify-content: center;
 }
 .form-group {
 	button {
-        background-color: #005733;
-		border: #005733;
-		padding-top: 10px;
-		margin-top: 10px;
+		border: white;
 		justify-content: center;
+		align-items: center;
+		padding: 10px;
 	}
 }
-.dudas {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-	color: #005733;
-	font-family: 'Times New Roman', Times, serif;
-	font-weight: bold;
-}
-
-
-/* --------- FOOTER CONTACTO  ----------*/
+/*------------ FOOTER -----------------*/
 .footer {
-	ul {
-		display: flex;
-		color: white;
-		text-decoration: none;
-		list-style-type: none;
-		font-style: inherit;
-		justify-content: space-around;
-		padding-top: 50px;
-	}
 	a {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 		text-decoration: none;
 		color: white;
-		font-size: 20px;
+		font-size: 10px;
 		font-family: 'Times New Roman', Times, serif;
 		font-weight: bold;
-		margin: 10px;
+		padding: 5px;
+		text-align: center;
 	}
 	li {
 		display: flex;
+		justify-content: center;
+		flex-direction: column;
 		color: white;
-		font-size: 20px;
+		font-size: 15px;
 		text-decoration: none;
 		list-style-type: none;
 		justify-content: center;
+		text-align: center;
+		padding: 5px;
 	}
+}
+.redes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 5px;
+}
+/* ----------- GRILLA ---------------*/
+.contenedor {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.4fr 1fr 0.4fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: 
+    "header header" 
+    "main main" 
+    "footer footer";
+}
+.header {
+	grid-area: header;
+}
+.main {
+	grid-area: main;
+	background-color: white;
+}
+.footer {
 	grid-area: footer;
 	background-color: #005733;
 }
 
-/* ----------RD CELULAR PAGINA CONTACTO  ----------*/
 
+/*----------- RD CELULAR ----------*/
 @media screen and (max-width: 500px) {
-	.contenedor {
+	/*.contenedor {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(1fr 1fr 1fr);
-		grid-template-areas: 
-        "header" 
-        "main" 
-        "footer";
+		grid-template-areas: "header" "main" "footer";
+	}*/
+	.header {
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
-    .header {
-        ul {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
 	.footer {
-        ul {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        li {
-            display: flex;
-            justify-content: center;
-        }
-    }
-    .redes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .form-group {
-        button {
-            background-color: #005733;
-            border: #005733;
-            padding-top: 10px;
-            margin-top: 10px;
-            justify-content: center;
-        }
+		ul {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	.redes {
+		a {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+
+/* ------- PAGINA CONTACTO RD CELULAR ------------*/
+.flexbox-container {
+	display: flex;
+	flex-direction: column;
+}
+.formulario {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	margin-left: 50px;
+}
+.mapa {
+	iframe {
+		width: 90%;
+		margin-left: 15px;
+	}
 }
 }
+
+
+
