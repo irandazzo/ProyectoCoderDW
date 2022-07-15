@@ -224,6 +224,88 @@
     padding: 10px;
 }
 
+.footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color:#005733;
+  }
+  .footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+    color: white;
+  }
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255,255,255,0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  .footer .col ul {
+    display: block;
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+  }
+  .menu li a{
+      text-decoration: none;
+      list-style: none;
+      color: #999999;
+  }
+  .redes ul li {
+    display: inline-block;
+    padding-right: 5px;
+  }
+  .redes h1{
+      text-align: center;
+      color: white;
+      font-size: larger;
+      padding-top: 20px;
+  }
+
+  .redes form{
+      padding: 10px;
+  }
+  
+  .footer .col ul li:hover {
+    color: white;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+  }
+  .clear {
+    clear: both;
+  }
+
+  .derechos{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+    }
+
 /* ----------- PAGINA PRODUCTOS -----------*/
 
 .main__productos article{
@@ -255,7 +337,7 @@
 }
 
 /* ---------- FOOTER -----------*/
-.footer ul{
+/*.footer ul{
     display: flex;
     flex-direction: row;
     color: white;
@@ -294,7 +376,8 @@
         flex-direction: column;
         justify-content: center;
         padding: 5px;
-    }
+    }*/
+    
 
 
 /* ---------- GRILLA ------------*/
@@ -317,7 +400,7 @@
       grid-area: main;
       background-color: white; 
     }
-    .footer {
+    /*.footer {
       grid-area: footer;
       background-color:  #005733;
 }
@@ -347,10 +430,17 @@
 .redes a{
     display:flex;
     flex-direction: row;
-
 }
 
-
+.redes form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 150px;
+}
+.redes h1{
+    width: 150px;
+}
     /* ------- PAGINA INDEX ------*/   
     
     .portada{
