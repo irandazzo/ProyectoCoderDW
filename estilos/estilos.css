@@ -270,6 +270,12 @@
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
   }
+  .footer .col ul li:hover {
+    color: white;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+  }
   .menu li a{
       text-decoration: none;
       list-style: none;
@@ -290,12 +296,7 @@
       padding: 10px;
   }
   
-  .footer .col ul li:hover {
-    color: white;
-    transition: 0.1s;
-    -webkit-transition: 0.1s;
-    -moz-transition: 0.1s;
-  }
+
   .clear {
     clear: both;
   }
