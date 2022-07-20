@@ -15,32 +15,9 @@
 .header .container-fluid{
     background-color: #005733;
     padding-left: 20px;
-    /*display: flex;
-    justify-content: center;
-    color: white;*/
-}
-.container-fluid button{
-    border-radius: 2rem;
-    font-size: 20px;
 }
 
-.logo{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding-left: 150px;
-}
 
-.btn-outline-success{
-    background-color:white;
-    font-weight: 600;
-    color:#005733;
-}
-
-.btn-outline-success:hover{
-    background-color:#005733;
-    color: white;
-}
 .header ul{
     display: flex;
     color: white;
@@ -71,8 +48,31 @@
     font-weight: bold;
 }
 
+.container-fluid button{
+    border-radius: 2rem;
+    font-size: 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-left: 150px;
+}
+
+.btn-outline-success{
+    background-color:white;
+    font-weight: 600;
+    color:#005733;
+}
+
+.btn-outline-success:hover{
+    background-color:#005733;
+    color: white;
+}
+
 /* ----------- MAIN INDEX ---------*/
-.main section{
+/*.main section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,9 +118,9 @@
 .bannercannon{
    display: block;
    padding: 20px;
-}
+}*/
 /* --------- PAGINA NOSOTROS ----------*/
-.nosotros section{
+/*.nosotros section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,15 +134,14 @@
     font-size: 15px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    padding-left: 30px;
+    padding: 15px;
     padding-bottom: 10px;
 }
 
 .nosotros img{
     display: flex;
     justify-content: center;
-    padding-left: 30px;
-}
+}*/
 
 /* ---------- PAGINA FAQS ---------*/
 /*.mainfaqs{
