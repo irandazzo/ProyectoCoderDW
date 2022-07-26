@@ -12,6 +12,7 @@
     box-sizing: border-box;
 }
 /* ------------ MAPA ---------*/
+/*
 $estilos:(
     color: #005733,
     padding:10px,
@@ -26,7 +27,7 @@ $estilos:(
 }
 
 /* --------- EXTEND ----------*/
-
+/*
 .btn-outline-success{
     width: 500px;
     background-color: white;
@@ -44,7 +45,7 @@ $estilos:(
 }
 
 /* -------- MIXIN ------*/
-
+/*
 @mixin FlexBase($display, $direction, $wrap){
     display: $display;
     flex-direction: $direction;
@@ -54,4 +55,4 @@ $estilos:(
 .imagenesventa{
     @include FlexBase(flex,row ,wrap )
 }
-
+*/

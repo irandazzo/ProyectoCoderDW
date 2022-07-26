@@ -71,6 +71,22 @@
     color: white;
 }
 
+.muestracolchon{
+    display: flex;
+    color: #005733;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 15px;
+}
+
+.especificaciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
 /* ----------- MAIN INDEX ---------*/
 /*.main section{
     display: flex;

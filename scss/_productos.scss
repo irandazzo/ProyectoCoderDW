@@ -1,0 +1,94 @@
+/* ---------- CONTENIDO PAGINA PRODUCTOS ---------*/
+.main {
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+.portada {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 0px;
+}
+.card {
+	color: #005733;
+	margin: 20px;
+	border-color: #005733;
+	display: flex;
+	flex-direction: column;
+}
+.card-body {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.btn-primary {
+	display: flex;
+	justify-content: center;
+	background-color: #005733;
+	border: #005733;
+	font-size: medium;
+	&:hover {
+		background-color: white;
+		color: #005733;
+		border-style: inherit;
+	}
+}
+/* ------- RD PARA CELULAR ----------*/
+@media screen and (max-width: 500px) {
+	.contenedor {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(0.4fr 0.4fr 0.4fr);
+		grid-template-areas: "header" "main" "footer";
+	}
+	.header {
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	.footer {
+		ul {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	.redes {
+		a {
+			display: flex;
+			flex-direction: row;
+		}
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 150px;
+		}
+		h1 {
+			width: 150px;
+		}
+	}
+.portada {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 10px;
+}
+.card {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 70%;
+    }
+    .bannerproductos {
+        img {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+    
+}
