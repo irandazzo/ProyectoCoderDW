@@ -3,18 +3,20 @@
 	padding: 10px;
 }
 .faqspreg {
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: bold;
 	color: #005733;
 	font-family: 'Times New Roman', Times, serif;
 	padding: 5px;
 	text-align: left;
+	text-decoration: none;
 }
 .faqsresp {
 	color: #005733;
 	font-size: 20px;
 	font-family: 'Times New Roman', Times, serif;
 	padding: 5px;
+	font-weight: 550;
 	text-align: left;
 }
 .bannerfaqs{
@@ -22,13 +24,7 @@
 }
 
 /* ----------- RD PARA CELULAR ---------------*/
-@media screen and (max-width: 500px) {
-	/*.contenedor {
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(1fr 1fr 1fr);
-		grid-template-areas: "header" "main" "footer";
-	}*/
-
+@media screen and (max-width: 468px) {
 	.header {
 		ul {
 			display: flex;
@@ -63,6 +59,7 @@
         text-align: center;
         font-size: 15px;
         justify-content: center;
+		padding: 300px;
     }
     .bannerfaqs{
         width: 100%;

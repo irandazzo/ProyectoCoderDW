@@ -81,12 +81,7 @@
 
 
 /*----------- RD CELULAR ----------*/
-@media screen and (max-width: 500px) {
-	/*.contenedor {
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(1fr 1fr 1fr);
-		grid-template-areas: "header" "main" "footer";
-	}*/
+@media screen and (max-width: 468px) {
 	.header {
 		ul {
 			display: flex;
@@ -116,15 +111,13 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:center;
-	margin-left: 50px;
+	margin: auto;
+	padding: 10px;
 }
 .mapa {
 	iframe {
 		width: 90%;
-		margin-left: 15px;
+		margin: auto;
+		padding: 10px;
 	}
-}
-}
-
-
-
+}}

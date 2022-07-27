@@ -11,23 +11,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* ------------ MAPA ---------*/
-/*
-$estilos:(
-    color: #005733,
-    padding:10px,
-    fuente: 50px, 
-);
 
-.header{
-    background-color: map-get($estilos , color );
-    padding: map-get($estilos , padding);
-    font-size: map-get($estilos, fuente);
-
+.titulo{
+    display: flex;
+    flex-direction: column;
+    color: #005733;
+    text-align: center;
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
 }
 
 /* --------- EXTEND ----------*/
-/*
+
 .btn-outline-success{
     width: 500px;
     background-color: white;
@@ -45,7 +41,7 @@ $estilos:(
 }
 
 /* -------- MIXIN ------*/
-/*
+
 @mixin FlexBase($display, $direction, $wrap){
     display: $display;
     flex-direction: $direction;
@@ -55,4 +51,3 @@ $estilos:(
 .imagenesventa{
     @include FlexBase(flex,row ,wrap )
 }
-*/

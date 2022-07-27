@@ -10,7 +10,7 @@
 		justify-content: center;
 		text-align: center;
 		color: #005733;
-		font-size: 15px;
+		font-size: 20px;
 		font-weight: bold;
 		font-family: 'Times New Roman', Times, serif;
 		padding: 15px;
@@ -23,7 +23,7 @@
 }
 
 /* ---------- RD PARA CELULAR ----------*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 468px) {
 	.contenedor {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(0.4fr 0.4fr 0.4fr);
