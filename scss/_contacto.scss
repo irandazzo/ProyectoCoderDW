@@ -10,7 +10,7 @@
 .formulario {
 	display: flex;
 	flex-direction: column;
-	width: 50rem;
+	width: 40rem;
 	background-color: $colorPrimario;
 	padding: 20px;
 	margin-bottom: 20px;
@@ -20,12 +20,12 @@
 .btn-contacto {
 	background-color: white;
 	border: none;
-	color: #005733;
+	color: $colorLetra;
 	padding-top: 10px;
 	margin: 10px;
 	
 	&:hover {
-		background-color: #005733;
+		background-color: $colorPrimario;
 		border: none;
 		color: white;
 	}
@@ -33,7 +33,7 @@
 .ubicacionContacto {
 	display: flex;
 	flex-direction: column;
-	color: #005733;
+	color: $colorLetra;
 	font-family: 'Times New Roman', Times, serif;
 	font-weight: bold;
 	h2 {
@@ -77,7 +77,7 @@
 }
 .footer {
 	grid-area: footer;
-	background-color: #005733;
+	background-color: $colorPrimario;
 }
 
 
@@ -129,5 +129,6 @@
 .btn-suscribir{
 	display: flex;
 	flex-direction: column;
+
 }
 }
