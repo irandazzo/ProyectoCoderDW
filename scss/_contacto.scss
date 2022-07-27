@@ -10,19 +10,20 @@
 .formulario {
 	display: flex;
 	flex-direction: column;
-	width: 15rem;
-	background-color: #005733;
+	width: 50rem;
+	background-color: $colorPrimario;
 	padding: 20px;
 	margin-bottom: 20px;
 	border-radius: 50px;
 	color: white;
 }
-.btn-lg {
+.btn-contacto {
 	background-color: white;
 	border: none;
 	color: #005733;
 	padding-top: 10px;
 	margin: 10px;
+	
 	&:hover {
 		background-color: #005733;
 		border: none;
@@ -109,15 +110,24 @@
 }
 .formulario {
 	display: flex;
+	width: 100%;
 	flex-wrap: wrap;
 	justify-content:center;
 	margin: auto;
 	padding: 10px;
 }
+.ubicacionContacto h2{
+	padding: 30px;
+	margin: 10px;
+}
 .mapa {
 	iframe {
 		width: 90%;
 		margin: auto;
-		padding: 10px;
 	}
-}}
+}
+.btn-suscribir{
+	display: flex;
+	flex-direction: column;
+}
+}

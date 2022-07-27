@@ -1,6 +1,6 @@
 /* ----------- HEADER ----------*/
 .header .container-fluid {
-  background-color: #005733;
+  background-color: #006f48;
   padding-left: 20px; }
 
 .header ul {
@@ -38,15 +38,46 @@
   align-items: center;
   padding-left: 150px; }
 
-.btn-outline-success, .btn-suscribir, .btn-buscador {
+.btn-outline-success {
   background-color: white;
   font-weight: 600;
   color: #005733; }
-  .btn-outline-success:hover, .btn-suscribir:hover, .btn-buscador:hover {
-    background-color: #005733;
+  .btn-outline-success:hover {
+    background-color: #006f48;
     color: white; }
 
 /* ------------ CONTENIDO PAGINA INDEX -----------*/
+.muestracolchon {
+  display: flex;
+  color: #008037;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: right;
+  padding: 15px; }
+  .muestracolchon h2 {
+    color: #008037;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    text-align: right; }
+  .muestracolchon p {
+    color: #008037;
+    font-size: 15px;
+    text-align: right; }
+  .muestracolchon ul {
+    list-style: none; }
+
+.btn-outline-success {
+  background-color: #006f48;
+  font-weight: bold;
+  color: white;
+  font-family: 'Times New Roman', Times, serif; }
+  .btn-outline-success:hover {
+    background-color: #006f48;
+    color: white; }
+
 .bannercannon {
   display: block;
   padding: 20px; }
@@ -56,7 +87,7 @@
   width: 100%;
   position: relative;
   height: auto;
-  background-color: #005733; }
+  background-color: #006f48; }
   .footer .col {
     width: 190px;
     height: auto;
@@ -185,13 +216,13 @@
   flex-direction: column;
   text-align: center; }
 
-.btn-primary {
+.btn-productos {
   display: flex;
   justify-content: center;
   background-color: #005733;
   border: #005733;
   font-size: medium; }
-  .btn-primary:hover {
+  .btn-productos:hover {
     background-color: white;
     color: #005733;
     border-style: inherit; }
@@ -355,20 +386,20 @@
 .formulario {
   display: flex;
   flex-direction: column;
-  width: 15rem;
-  background-color: #005733;
+  width: 50rem;
+  background-color: #006f48;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 50px;
   color: white; }
 
-.btn-lg {
+.btn-contacto {
   background-color: white;
   border: none;
   color: #005733;
   padding-top: 10px;
   margin: 10px; }
-  .btn-lg:hover {
+  .btn-contacto:hover {
     background-color: #005733;
     border: none;
     color: white; }
@@ -433,14 +464,20 @@
     flex-direction: column; }
   .formulario {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
     padding: 10px; }
+  .ubicacionContacto h2 {
+    padding: 30px;
+    margin: 10px; }
   .mapa iframe {
     width: 90%;
-    margin: auto;
-    padding: 10px; } }
+    margin: auto; }
+  .btn-suscribir {
+    display: flex;
+    flex-direction: column; } }
 
 * {
   margin: 0;
@@ -450,27 +487,8 @@
 .titulo {
   display: flex;
   flex-direction: column;
-  color: #005733;
+  color: #008037;
   text-align: center;
   font-size: 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px; }
-
-/* --------- EXTEND ----------*/
-.btn-outline-success, .btn-suscribir, .btn-buscador {
-  width: 500px;
-  background-color: white;
-  font-family: 'Times New Roman', Times, serif;
-  color: #005733; }
-
-.btn-suscribir {
-  background-color: black; }
-
-.btn-buscador {
-  background-color: grey; }
-
-/* -------- MIXIN ------*/
-.imagenesventa {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }

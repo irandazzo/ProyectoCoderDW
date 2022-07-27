@@ -1,7 +1,7 @@
 /* ----------- HEADER ----------*/
 .header {
 	.container-fluid {
-		background-color: #005733;
+		background-color: $colorPrimario;
 		padding-left: 20px;
 	}
 	ul {
@@ -47,11 +47,46 @@
 	font-weight: 600;
 	color: #005733;
 	&:hover {
-		background-color: #005733;
+		background-color: $colorPrimario;
 		color: white;
 	}
 }
 /* ------------ CONTENIDO PAGINA INDEX -----------*/
+.muestracolchon {
+	display: flex;
+	color: $colorLetra;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: right;
+	padding: 15px;
+	h2 {
+		color: $colorLetra;
+		font-size: 30px;
+		font-weight: bold;
+		font-family: 'Times New Roman', Times, serif;
+		padding: 10px;
+		text-align: right;
+	}
+	p {
+		color: $colorLetra;
+		font-size: 15px;
+		text-align: right;
+	}
+	ul {
+		list-style: none;
+	}
+}
+.btn-outline-success {
+	background-color: $colorPrimario;
+	font-weight: bold;
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+	&:hover {
+		background-color: $colorPrimario;
+		color: white;
+	}
+}
 
 .bannercannon {
 	display: block;
@@ -62,7 +97,7 @@
 	width: 100%;
 	position: relative;
 	height: auto;
-	background-color: #005733;
+	background-color: $colorPrimario;
 	.col {
 		width: 190px;
 		height: auto;

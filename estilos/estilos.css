@@ -13,7 +13,7 @@
 }*/
 
 .header .container-fluid{
-    background-color: #005733;
+    background-color: #006f48;
     padding-left: 20px;
 }
 
@@ -61,14 +61,15 @@
 }
 
 .btn-outline-success{
-    background-color:white;
-    font-weight: 600;
-    color:#005733;
+    background-color:#005733;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .btn-outline-success:hover{
     background-color:#005733;
-    color: white;
+    color: grey;
 }
 
 .muestracolchon{
@@ -77,16 +78,37 @@
     font-size: 20px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+    text-align: right;
     padding: 15px;
 }
-
+.muestracolchon h2{
+    color:#005733;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    text-align: right;
+}
+.muestracolchon p{
+    color:#005733;
+    font-size: 15px;
+    text-align: right;
+}
+.muestracolchon ul{
+    list-style: none;
+}
+.redes img{
+    display: flex;
+    flex-direction: column;
+}
+}
+/*
 .especificaciones{
     display: flex;
     flex-direction: column;
     justify-content: center;
+*/
 
-}
 /* ----------- MAIN INDEX ---------*/
 /*.main section{
     display: flex;
@@ -190,7 +212,7 @@
     padding-left:30px;
 }*/
 
-.faqs{
+/*.faqs{
     padding: 10px;
 }
 
@@ -208,7 +230,7 @@
     font-family: 'Times New Roman', Times, serif;
     padding: 5px;
     text-align: left;
-}
+}*/
 
 /* ---------- PAGINA CONTACTO --------*/
 /*.flexbox-container {
@@ -267,7 +289,7 @@
     align-items: center;
     padding: 10px;
 }*/
-
+/*
 .footer {
     width: 100%;
     position: relative;
@@ -349,7 +371,7 @@
       display: flex;
       flex-direction: row;
       text-align: center;
-    }
+    }*/
 
 /* ----------- PAGINA PRODUCTOS -----------*/
 
@@ -460,7 +482,7 @@
 }
 
 /*----------- RD CELULAR ----------*/
-
+/*
 @media screen and (max-width: 500px){
     .contenedor{
         grid-template-columns: 1fr;
@@ -496,7 +518,7 @@
     width: 150px;
 }
     /* ------- PAGINA INDEX ------*/   
-    
+    /*
     .portada{
         display: flex;
         flex-direction: column;
@@ -567,7 +589,7 @@
 
 
     /* -------- PAGINA NOSOTROS -------*/
-
+/*
     .nosotros section img{
         width: 300px;
         padding-top: 10px;
@@ -598,7 +620,7 @@
     }*/
 
     /* ---------- PAGINA PRODUCTOS --------*/
-
+/*
     .main__productos div img{
         width: 315px;
     }
@@ -610,5 +632,3 @@
         justify-content: center;
     }
 }
-        
-    /* ---------- RD TABLET ---------*/

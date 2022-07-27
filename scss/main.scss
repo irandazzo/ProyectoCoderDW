@@ -1,3 +1,6 @@
+$colorPrimario: #006f48;
+$colorLetra: #008037;
+
 @import "index";
 @import "productos";
 @import "faqs";
@@ -6,7 +9,7 @@
 
 
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,39 +18,10 @@
 .titulo{
     display: flex;
     flex-direction: column;
-    color: #005733;
+    color:#008037;
     text-align: center;
     font-size: 40px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
 }
 
-/* --------- EXTEND ----------*/
-
-.btn-outline-success{
-    width: 500px;
-    background-color: white;
-    font-family: 'Times New Roman', Times, serif;
-    color: #005733;
-}
-.btn-suscribir{
-    @extend .btn-outline-success;
-    background-color: black;
-}
-
-.btn-buscador{
-    @extend .btn-outline-success;
-    background-color: grey;
-}
-
-/* -------- MIXIN ------*/
-
-@mixin FlexBase($display, $direction, $wrap){
-    display: $display;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
-}
-
-.imagenesventa{
-    @include FlexBase(flex,row ,wrap )
-}
