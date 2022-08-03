@@ -15,9 +15,10 @@
 	}
 	.buscador {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
+		align-content:stretch;
 		width: 350px;
-		align-items: center;
+		
 	}
 	li {
 		padding: 5px;
@@ -29,7 +30,11 @@
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		font-weight: bold;
 	}
-}
+}/*
+.btn-buscar{
+	color: red;
+	background-color: red;
+}*/
 .container-fluid {
 	button {
 		border-radius: 2rem;
@@ -61,7 +66,7 @@
 /* ------------ CONTENIDO PAGINA INDEX -----------*/
 .muestracolchon {
 	display: flex;
-	color: $colorLetra;
+	color: #484848;
 	font-size: 20px;
 	
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -203,6 +208,11 @@
 		color: white;
 	}
 }
+
+.seccionesFooter{
+	margin: 20px;
+	
+}
 .copyrightFooter {
 	grid-area: copyright;
 	display: flex;
@@ -214,7 +224,10 @@
 .formFooter {
 	display: flex;
 	justify-content: center;
-	padding: 10px;
+	padding: 5px;
+}
+.suscribir{
+	margin: 20px;
 }
 
 
@@ -232,27 +245,21 @@
 			align-items: center;
 		}
 	}
-	.footer {
-		ul {
-			display: flex;
-			flex-direction: column;
-		}
+	.formularioFooter {
+		width: 100%;
+		margin: auto;
 	}
-	.redes {
-		a {
-			display: flex;
-			flex-direction: row;
-		}
-		form {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			width: 150px;
-		}
-		h1 {
-			width: 150px;
-		}
+	.btn-footer {
+		margin: auto;
+		margin-top: 10px;
 	}
+	.seccionesFooter {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+
 .carousel-inner {
 	width: 100%;
 }

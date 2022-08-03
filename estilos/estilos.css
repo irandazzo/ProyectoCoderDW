@@ -580,8 +580,8 @@
 }
 
 /*----------- RD CELULAR ----------*/
-/*
-@media screen and (max-width: 500px){
+
+@media screen and (max-width: 480px){
     .contenedor{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1fr 1fr 1fr);
@@ -596,27 +596,16 @@
         flex-direction: column;
         align-items: center;
     }
-    .footer ul{
+    /*.footer ul{
         display: flex;
         flex-direction: column;
         
     }
-.redes a{
-    display:flex;
-    flex-direction: row;
-}
 
-.redes form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 150px;
-}
-.redes h1{
-    width: 150px;
-}
+
+
     /* ------- PAGINA INDEX ------*/   
-    /*
+    
     .portada{
         display: flex;
         flex-direction: column;
@@ -635,8 +624,6 @@
         display: flex;
         width: 30%;
         justify-content: center;
-        align-items: center;
-        flex-direction: row;
     }
 
     .card{
@@ -644,31 +631,21 @@
         justify-content: center;
         flex-direction: column;
         width: 70%;
-
-    }
-
-    /*.bannerprincipal{
-        display: none;
-    }*/
-    /*.producto1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 15px;
 }
-    .producto2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 15px;
-    }
-    .producto1 img{
-        width: 250px;
-    }
-    .producto2 img{
-        width: 250px;
-    }*/
 
+.formularioFooter{
+    width: 100%;
+    margin: auto;
+}
+.btn-footer{
+    margin: auto;
+    margin-top: 10px;
+}
+.seccionesFooter{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
     /* --------- PAGINA FAQS ---------*/
 
     /*.faqs article{
@@ -728,5 +705,5 @@
     }
     .main__productos div p{
         justify-content: center;
-    }
+    }*/
 }
