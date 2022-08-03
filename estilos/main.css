@@ -28,11 +28,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold; }
 
-/*
-.btn-buscar{
-	color: red;
-	background-color: red;
-}*/
 .container-fluid button {
   border-radius: 2rem;
   font-size: 20px; }
@@ -154,7 +149,8 @@
 .menuFooter li a {
   text-decoration: none;
   list-style: none;
-  color: #999999; }
+  color: #999999;
+  font-family: 'Times New Roman', Times, serif; }
   .menuFooter li a:hover {
     color: white;
     transition: 0.1s;
@@ -181,9 +177,6 @@
   .btn-footer:hover {
     background-color: #006f48;
     color: white; }
-
-.seccionesFooter {
-  margin: 20px; }
 
 .copyrightFooter {
   grid-area: copyright;
@@ -338,16 +331,6 @@
   .footer ul {
     display: flex;
     flex-direction: column; }
-  .redes a {
-    display: flex;
-    flex-direction: row; }
-  .redes form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 150px; }
-  .redes h1 {
-    width: 150px; }
   .faqs article {
     display: flex;
     flex-wrap: wrap;
@@ -394,17 +377,6 @@
   .footer ul {
     display: flex;
     flex-direction: column; }
-  .redes a {
-    display: flex;
-    flex-direction: row; }
-  .redes form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    padding: 20px; }
-  .redes h1 {
-    width: 100%; }
   .nosotros section img {
     width: 100%;
     padding-top: 10px; }

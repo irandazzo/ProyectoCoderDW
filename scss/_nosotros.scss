@@ -43,23 +43,7 @@
 			flex-direction: column;
 		}
 	}
-	.redes {
-		a {
-			display: flex;
-			flex-direction: row;
-		}
-		form {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			width: 100%;
-            padding: 20px;
-		}
-		h1 {
-			width: 100%;
-		}
-	}
-    .nosotros {
+	.nosotros {
         section {
             img {
                 width: 100%;
@@ -77,6 +61,5 @@
 		display: flex;
 		justify-content: center;
 		padding: 10px;
-
 	}
 }

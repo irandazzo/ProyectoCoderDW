@@ -30,11 +30,8 @@
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		font-weight: bold;
 	}
-}/*
-.btn-buscar{
-	color: red;
-	background-color: red;
-}*/
+}
+
 .container-fluid {
 	button {
 		border-radius: 2rem;
@@ -173,6 +170,7 @@
 			text-decoration: none;
 			list-style: none;
 			color: #999999;
+			font-family: 'Times New Roman', Times, serif;
 			&:hover {
 				color: white;
 				transition: 0.1s;
@@ -210,8 +208,6 @@
 }
 
 .seccionesFooter{
-	margin: 20px;
-	
 }
 .copyrightFooter {
 	grid-area: copyright;
