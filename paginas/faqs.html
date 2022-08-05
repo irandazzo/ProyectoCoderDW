@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="../estilos/bootstrap.min.css">
     <link rel="stylesheet" href="../estilos/main.css">
-
+    <script src="https://kit.fontawesome.com/0994120167.js" crossorigin="anonymous"></script>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -49,11 +49,13 @@
               <li class="nav-item">
                 <a class="nav-link active" href="contacto.html">Contacto</a>
               </li>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-              </form>           
             </ul>
+          </div>
+          <div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form> 
           </div>
         </div>
     </nav>
@@ -67,12 +69,19 @@
 
           <h1 class="titulo">Preguntas Frecuentes</h1>
           <article class="faqs">
-          <div class="accordion" id="accordionExample">
-            <div class="card">
+            
+            <div class="accordion" id="accordionExample">
+            <div class="card cardFaqs">
               <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left faqspreg" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    ¿Qué formas de pago puedo aprovechar para realizar mi compra?</button>
+                  <button class="btn btn-link btn-block text-left faqspreg" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
+                    <span class="fa-stack fa-sm">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    ¿Qué formas de pago puedo aprovechar para realizar mi compra?
+                   
+                  </button>
                 </h2>
               </div>
           
@@ -86,11 +95,16 @@
               <div class="card-header" id="headingTwo">
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left collapsed faqspreg" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    ¿Cuál es el costo de envío?</button>
+                    <span class="fa-stack fa-sm">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    ¿Cuál es el costo de envío?
+                  </button>
                 </h2>
               </div>
               <div id="collapseTwo" class="collapse faqsresp" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
+                <div class="card-body respuestaFaqs">
                   Los costos del envío serán informados por nuestros vendedores a travéz de WHATSAPP una vez realizado tu pedido.</div>
               </div>
             </div>
@@ -98,11 +112,16 @@
               <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left collapsed faqspreg" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    ¿Cómo se realizan los envíos?</button>
+                    <span class="fa-stack fa-sm">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    ¿Cómo se realizan los envíos?
+                  </button>
                 </h2>
               </div>
               <div id="collapseThree" class="collapse faqsresp" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
+                <div class="card-body respuestaFaqs">
                   Trabajamos con las mejores empresas de transporte del pais.</div>
               </div>
             </div>
@@ -110,11 +129,16 @@
               <div class="card-header" id="headingFour">
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left collapsed faqspreg" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    ¿Dónde puedo recibir mi pedido?</button>
+                    <span class="fa-stack fa-sm">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    ¿Dónde puedo recibir mi pedido?
+                  </button>
                 </h2>
               </div>
               <div id="collapseFour" class="collapse faqsresp" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
+                <div class="card-body respuestaFaqs">
                   Los productos se envian a la direccion que vos prefieras.</div>
               </div>
             </div>
@@ -122,11 +146,16 @@
               <div class="card-header" id="headingFive">
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left collapsed faqspreg" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    ¿Cuánto tarda en llegar el pedido?</button>
+                    <span class="fa-stack fa-sm">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    ¿Cuánto tarda en llegar el pedido?
+                  </button>
                 </h2>
               </div>
               <div id="collapseFive" class="collapse faqsresp" aria-labelledby="headingFive" data-parent="#accordionExample">
-                <div class="card-body">
+                <div class="card-body respuestaFaqs">
                   El tiempo de entrega dependerá del tipo de envío y la empresa de logística. En general la demora se encuentra entre 3 y 7 días hábiles luego de acreditado el pago.</div>
               </div>
             </div>
@@ -134,11 +163,16 @@
               <div class="card-header" id="headingSix">
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left collapsed faqspreg" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    ¿Cuál es el plazo para realizar un cambio?</button>
+                    <span class="fa-stack fa-sm">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    ¿Cuál es el plazo para realizar un cambio?
+                  </button>
                 </h2>
               </div>
               <div id="collapseSix" class="collapse faqsresp" aria-labelledby="headingSix" data-parent="#accordionExample">
-                <div class="card-body">
+                <div class="card-body respuestaFaqs">
                   Los productos se envian a la direccion que vos prefieras.</div>
               </div>
             </div>
@@ -146,11 +180,16 @@
               <div class="card-header" id="headingSeven">
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left collapsed faqspreg" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    ¿Qué debo hacer si el producto no llega en buen estado?</button>
+                    <span class="fa-stack fa-sm">
+                      <i class="fas fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    ¿Qué debo hacer si el producto no llega en buen estado?
+                  </button>
                 </h2>
               </div>
               <div id="collapseSeven" class="collapse faqsresp" aria-labelledby="headingSeven" data-parent="#accordionExample">
-                <div class="card-body">
+                <div class="card-body respuestaFaqs">
                   Ponete en contacto con nuestras líneas de WhatsApp para encontrar una solución.</div>
               </div>
             </div>

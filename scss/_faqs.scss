@@ -1,26 +1,39 @@
 /* --------------- PAGINA FAQS -----------*/
+.accordion{
+	width: 100%;
+	text-align: left;
+}
 .faqs {
-	padding: 10px;
+	padding: 15px;
 }
 .faqspreg {
-	font-size: 25px;
+	font-size: 15px;
 	font-weight: bold;
 	color: #005733;
-	font-family: 'Times New Roman', Times, serif;
-	padding: 5px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding: 2px;
+	margin: 5px;
 	text-align: left;
 	text-decoration: none;
+	&:hover {
+		color: #6f6f6f;
+	}
 }
-.faqsresp {
-	color: #005733;
-	font-size: 20px;
-	font-family: 'Times New Roman', Times, serif;
-	padding: 5px;
-	font-weight: 550;
+.respuestaFaqs{
 	text-align: left;
 }
+.faqsresp {
+	color: black;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fa-stack{
+	width: 100%;
+	text-align: right;
+	
+}
 .bannerfaqs{
-	padding: 10px;
+	padding: 5px;
+	width: 100%;
 }
 
 /* ----------- RD PARA CELULAR ---------------*/

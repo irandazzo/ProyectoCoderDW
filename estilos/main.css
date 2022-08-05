@@ -1,4 +1,5 @@
 /* ----------- HEADER ----------*/
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 .header .container-fluid {
   background-color: #006f48;
   padding-left: 20px; }
@@ -117,21 +118,16 @@
     margin: 0;
     padding: 0; }
   .col li {
-    color: #999999;
+    color: white;
     font-size: 14px;
     font-family: inherit;
-    font-weight: bold;
+    font-size: 16px;
     padding: 5px 0px 5px 0px;
     cursor: pointer;
     transition: 0.2s;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     text-align: center; }
-    .col li:hover {
-      color: white;
-      transition: 0.1s;
-      -webkit-transition: 0.1s;
-      -moz-transition: 0.1s; }
 
 .titulosFooter {
   margin: 0;
@@ -149,13 +145,8 @@
 .menuFooter li a {
   text-decoration: none;
   list-style: none;
-  color: #999999;
-  font-family: 'Times New Roman', Times, serif; }
-  .menuFooter li a:hover {
-    color: white;
-    transition: 0.1s;
-    -webkit-transition: 0.1s;
-    -moz-transition: 0.1s; }
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 .menuRedes li a {
   display: flex;
@@ -184,7 +175,11 @@
   flex-direction: column;
   align-items: center;
   color: white;
-  padding: 5px; }
+  padding: 5px;
+  /*background-color: black;*/
+  border-top: solid 1px white;
+  width: 100%;
+  height: 50px; }
 
 .formFooter {
   display: flex;
@@ -299,28 +294,39 @@
     padding: 10px; } }
 
 /* --------------- PAGINA FAQS -----------*/
-.faqs {
-  padding: 10px; }
-
-.faqspreg {
-  font-size: 25px;
-  font-weight: bold;
-  color: #005733;
-  font-family: 'Times New Roman', Times, serif;
-  padding: 5px;
-  text-align: left;
-  text-decoration: none; }
-
-.faqsresp {
-  color: #005733;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  padding: 5px;
-  font-weight: 550;
+.accordion {
+  width: 100%;
   text-align: left; }
 
+.faqs {
+  padding: 15px; }
+
+.faqspreg {
+  font-size: 15px;
+  font-weight: bold;
+  color: #005733;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2px;
+  margin: 5px;
+  text-align: left;
+  text-decoration: none; }
+  .faqspreg:hover {
+    color: #6f6f6f; }
+
+.respuestaFaqs {
+  text-align: left; }
+
+.faqsresp {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.fa-stack {
+  width: 100%;
+  text-align: right; }
+
 .bannerfaqs {
-  padding: 10px; }
+  padding: 5px;
+  width: 100%; }
 
 /* ----------- RD PARA CELULAR ---------------*/
 @media screen and (max-width: 480px) {
@@ -350,12 +356,12 @@
 
 .nosotros article {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  text-align: left;
   color: #005733;
   font-size: 20px;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
+  line-height: 40px;
   padding: 15px;
   padding-bottom: 10px; }
 
