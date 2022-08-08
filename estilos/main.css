@@ -13,6 +13,34 @@
   justify-content: space-around;
   padding: 5px; }
 
+.header .btn-buscar i {
+  background-color: none;
+  font-size: 20px;
+  width: 100px;
+  border-color: white; }
+
+.header .input-wrapper {
+  position: relative;
+  width: 271px; }
+
+.header .input {
+  box-sizing: border-box;
+  color: #191919;
+  padding: 15px 15px 15px 35px;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 10px;
+  border: #005733; }
+
+.header .input-icon {
+  color: #005733;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%); }
+
 .header .buscador {
   display: flex;
   justify-content: flex-end;
@@ -100,7 +128,9 @@
   background-color: #006f48; }
 
 .footer {
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly; }
 
 .col {
   width: 190px;
@@ -109,7 +139,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  padding: 10px;
+  padding-top: 10px;
   color: white; }
   .col ul {
     display: block;
@@ -358,8 +388,8 @@
   display: flex;
   text-align: left;
   color: #005733;
-  font-size: 25px;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 50px;
   padding: 20px;
   padding-bottom: 10px; }
@@ -388,7 +418,7 @@
   .nosotros article {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    margin: auto;
     font-size: 15px; }
   .btn-footer {
     display: flex;
