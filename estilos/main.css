@@ -92,7 +92,7 @@
   display: grid;
   grid-template-columns: repeat(6fr);
   grid-template-rows: 0.4fr 0.2fr;
-  gap: 0px 0px;
+  grid-gap: 20px;
   grid-auto-flow: row;
   grid-template-areas: "footer footer footer footer footer footer" "copyright copyright copyright copyright copyright copyright";
   grid-area: footer;
@@ -358,11 +358,10 @@
   display: flex;
   text-align: left;
   color: #005733;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 25px;
   font-family: 'Times New Roman', Times, serif;
-  line-height: 40px;
-  padding: 15px;
+  line-height: 50px;
+  padding: 20px;
   padding-bottom: 10px; }
 
 .nosotros img {
@@ -414,6 +413,9 @@
   margin-bottom: 20px;
   border-radius: 50px;
   color: white; }
+
+.form-group {
+  padding: 5px; }
 
 .btn-contacto {
   background-color: white;

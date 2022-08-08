@@ -107,7 +107,7 @@
 	display: grid;
 	grid-template-columns: repeat(1fr*6);
 	grid-template-rows: 0.4fr 0.2fr;
-	gap: 0px 0px;
+	grid-gap: 20px;
 	grid-auto-flow: row;
 	grid-template-areas: "footer footer footer footer footer footer" "copyright copyright copyright copyright copyright copyright";
 	grid-area: footer;
@@ -194,9 +194,6 @@
 		background-color: #006f48;
 		color: white;
 	}
-}
-
-.seccionesFooter{
 }
 .copyrightFooter {
 	grid-area: copyright;
