@@ -187,7 +187,7 @@
   display: flex;
   justify-content: center;
   padding: 5px;
-  margin: 35px;
+  margin: 50px;
   background-color: white;
   color: #008037;
   font-weight: bold;
@@ -206,8 +206,7 @@
   align-items: center;
   color: white;
   padding: 5px;
-  /*background-color: black;*/
-  border-top: solid 1px white;
+  border-top: solid 2px white;
   width: 100%;
   height: 50px; }
 
@@ -235,6 +234,13 @@
   .btn-footer {
     margin: auto;
     margin-top: 10px; }
+  .input-wrapper {
+    margin: auto;
+    padding-bottom: 10px; }
+  .input-icon {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 7px; }
   .seccionesFooter {
     display: flex;
     flex-direction: column;
@@ -282,7 +288,7 @@
   .btn-productos:hover {
     background-color: white;
     color: #005733;
-    border-style: inherit; }
+    border: solid	1px #005733; }
 
 /* ------- RD PARA CELULAR ----------*/
 @media screen and (max-width: 480px) {
@@ -290,38 +296,33 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(0.4fr 0.4fr 0.4fr);
     grid-template-areas: "header" "main" "footer"; }
-  .header ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .footer ul {
-    display: flex;
-    flex-direction: column; }
-  .redes a {
-    display: flex;
-    flex-direction: row; }
-  .redes form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 150px; }
-  .redes h1 {
-    width: 150px; }
   .portada {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10px; }
+    padding-left: 10px;
+    padding-bottom: 20px; }
   .card {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 70%;
     margin: auto;
-    padding: 20px; }
+    padding: 10px;
+    padding-top: 20px; }
   .bannerproductos img {
     width: 100%;
-    padding: 10px; } }
+    padding: 5px; }
+  .btn-productos {
+    display: flex;
+    justify-content: center;
+    background-color: #005733;
+    border: #005733;
+    font-size: medium; }
+    .btn-productos:hover {
+      background-color: white;
+      color: #005733;
+      border: solid	1px #005733; } }
 
 /* --------------- PAGINA FAQS -----------*/
 .accordion {
@@ -382,17 +383,19 @@
 .nosotros section {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 50px; }
 
-.nosotros article {
-  display: flex;
+.nosotros p {
   text-align: left;
+  font-size: 17px;
   color: #005733;
-  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 50px;
+  line-height: 30px;
   padding: 20px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  margin-left: 70px;
+  margin-right: 70px; }
 
 .nosotros img {
   display: flex;
@@ -415,11 +418,6 @@
   .nosotros section img {
     width: 100%;
     padding-top: 10px; }
-  .nosotros article {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    font-size: 15px; }
   .btn-footer {
     display: flex;
     justify-content: center;
@@ -449,13 +447,13 @@
 
 .btn-contacto {
   background-color: white;
-  border: none;
+  border: solid 1px white;
   color: #008037;
   padding-top: 10px;
   margin: 10px; }
   .btn-contacto:hover {
     background-color: #006f48;
-    border: none;
+    border: solid 1px white;
     color: white; }
 
 .ubicacionContacto {
@@ -544,5 +542,15 @@
   color: #008037;
   text-align: center;
   font-size: 40px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px; }
+
+.tituloIndex {
+  display: flex;
+  flex-direction: column;
+  color: #008037;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 10px; }

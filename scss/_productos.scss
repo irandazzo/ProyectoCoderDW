@@ -34,7 +34,7 @@
 	&:hover {
 		background-color: white;
 		color: #005733;
-		border-style: inherit;
+		border: solid	1px #005733;
 	}
 }
 /* ------- RD PARA CELULAR ----------*/
@@ -44,39 +44,12 @@
 		grid-template-rows: repeat(0.4fr 0.4fr 0.4fr);
 		grid-template-areas: "header" "main" "footer";
 	}
-	.header {
-		ul {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-	}
-	.footer {
-		ul {
-			display: flex;
-			flex-direction: column;
-		}
-	}
-	.redes {
-		a {
-			display: flex;
-			flex-direction: row;
-		}
-		form {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			width: 150px;
-		}
-		h1 {
-			width: 150px;
-		}
-	}
 .portada {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding-left: 10px;
+	padding-bottom: 20px;
 }
 .card {
 	display: flex;
@@ -84,13 +57,25 @@
 	flex-direction: column;
 	width: 70%;
 	margin: auto;
-	padding: 20px;
+	padding: 10px;
+	padding-top: 20px;
     }
     .bannerproductos {
         img {
             width: 100%;
-            padding: 10px;
+			padding: 5px;
         }
     }
-    
+	.btn-productos {
+		display: flex;
+		justify-content: center;
+		background-color: #005733;
+		border: #005733;
+		font-size: medium;
+		&:hover {
+			background-color: white;
+			color: #005733;
+			border: solid	1px #005733;
+		}
+	}
 }

@@ -23,7 +23,17 @@ $colorLetra: #008037;
     color:#008037;
     text-align: center;
     font-size: 40px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+.tituloIndex{
+    display: flex;
+    flex-direction: column;
+    color:#008037;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
 }
 

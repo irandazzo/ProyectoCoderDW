@@ -23,14 +23,14 @@
 
 .btn-contacto {
 	background-color: white;
-	border: none;
+	border: solid 1px white;
 	color: $colorLetra;
 	padding-top: 10px;
 	margin: 10px;
 	
 	&:hover {
 		background-color: $colorPrimario;
-		border: none;
+		border: solid 1px white;
 		color: white;
 	}
 }
