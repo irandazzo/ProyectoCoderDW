@@ -200,6 +200,7 @@
 			list-style: none;
 			color: white;
 			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 14px;
 		}
 
 	}
@@ -250,8 +251,6 @@
 .suscribir{
 	margin: 20px;
 }
-
-
 /* ------- RD PARA CELULAR ----------*/
 @media screen and (max-width: 480px) {
 	.contenedor {
@@ -263,7 +262,7 @@
 		ul {
 			display: flex;
 			flex-direction: column;
-			align-items: center;
+			align-items: flex-start;
 		}
 	}
 	.formularioFooter {
@@ -275,7 +274,9 @@
 		margin-top: 10px;
 	}
 	.input-wrapper{
-		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 		padding-bottom: 10px;
 	}
 	.input-icon{

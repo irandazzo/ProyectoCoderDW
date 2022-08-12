@@ -85,29 +85,9 @@
 }
 
 
-/*----------- RD CELULAR ----------*/
-@media screen and (max-width: 480px) {
-	.header {
-		ul {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-	}
-	.footer {
-		ul {
-			display: flex;
-			flex-direction: column;
-		}
-	}
-	.redes {
-		a {
-			display: flex;
-			flex-direction: row;
-		}
-	}
-
 /* ------- PAGINA CONTACTO RD CELULAR ------------*/
+@media screen and (max-width: 480px) {
+
 .flexbox-container {
 	display: flex;
 	flex-direction: column;

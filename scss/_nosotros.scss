@@ -31,19 +31,6 @@
 		grid-template-rows: repeat(0.4fr 0.4fr 0.4fr);
 		grid-template-areas: "header" "main" "footer";
 	}
-	.header {
-		ul {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-	}
-	.footer {
-		ul {
-			display: flex;
-			flex-direction: column;
-		}
-	}
 	.nosotros {
         section {
             img {
