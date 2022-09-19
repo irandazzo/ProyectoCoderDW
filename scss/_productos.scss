@@ -1,41 +1,97 @@
 /* ---------- CONTENIDO PAGINA PRODUCTOS ---------*/
 .main {
-	section {
+	section{
+		width: 100%;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding: 50px 0;
 	}
+}
+.fa-cart-shopping{
+	color: #fff;
+	padding: 15px;
+	font-size: 20px;
 }
 .portada {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.card {
+
+.productos {
+	font-family: sans-serif;
+	width: 30%;
 	color: #005733;
-	margin: 20px;
-	border-color: #005733;
-	display: flex;
-	flex-direction: column;
-}
-.card-body {
-	justify-content: center;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-.btn-productos {
-	display: flex;
-	justify-content: center;
-	background-color: #005733;
-	border: #005733;
-	font-size: medium;
+	.img-container {
+		overflow: hidden;
+		height: 250px;
+		position: relative;
+		border-radius: 15px;
+		img {
+			width: 105%;
+			position: absolute;
+			transition: all 0.5s;
+		}
+		.promo {
+			position: absolute;
+			top: 10px;
+			left: 0;
+			font-size: 20px;
+			background: yellow;
+			padding: 15px;
+			color: black;
+			border-bottom-right-radius: 25px;
+			border-top-right-radius: 25px;
+		}
+	}
 	&:hover {
-		background-color: white;
-		color: #005733;
-		border: solid	1px #005733;
+		.img-container {
+			img {
+				transform: scale(1.2);
+			}
+		}
+	}
+	.info-container {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+		h3 {
+			margin: 0;
+			padding: 5px 15px;
+			width: 100%;
+		}
+		strong {
+			padding: 5px 15px;
+			width: 100%;
+		}
+		span {
+			padding: 5px 15px;
+			width: 100%;
+		}
+	}
+	.add-cart {
+		margin-top: 2px;
+		text-decoration: none;
+		color: white;
+		background-color: #005733;
+		padding: 15px;
+		border: 1px solid #005733;
+		border-radius: 25px;
+		&:hover {
+			color: #005733;
+			background-color: transparent;
+			border: 1px solid #005733;
+		}
 	}
 }
+	.card{
+    width: 33.333333%;
+	margin: 10px;
+	border: none;
+	}
+
 /* ------- RD PARA CELULAR ----------*/
 @media screen and (max-width: 480px) {
 	.contenedor {

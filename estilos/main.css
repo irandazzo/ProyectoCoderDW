@@ -85,9 +85,11 @@
   display: flex;
   color: #484848;
   font-size: 20px;
+  background-color: #dcdcdc;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: right;
-  padding: 15px; }
+  padding: 15px;
+  margin: 20px; }
   .muestracolchon h2 {
     color: #008037;
     font-size: 30px;
@@ -261,38 +263,79 @@
 
 /* ---------- CONTENIDO PAGINA PRODUCTOS ---------*/
 .main section {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 0; }
+
+.fa-cart-shopping {
+  color: #fff;
+  padding: 15px;
+  font-size: 20px; }
 
 .portada {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
 
+.productos {
+  font-family: sans-serif;
+  width: 30%;
+  color: #005733; }
+  .productos .img-container {
+    overflow: hidden;
+    height: 250px;
+    position: relative;
+    border-radius: 15px; }
+    .productos .img-container img {
+      width: 105%;
+      position: absolute;
+      transition: all 0.5s; }
+    .productos .img-container .promo {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      font-size: 20px;
+      background: yellow;
+      padding: 15px;
+      color: black;
+      border-bottom-right-radius: 25px;
+      border-top-right-radius: 25px; }
+  .productos:hover .img-container img {
+    transform: scale(1.2); }
+  .productos .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center; }
+    .productos .info-container h3 {
+      margin: 0;
+      padding: 5px 15px;
+      width: 100%; }
+    .productos .info-container strong {
+      padding: 5px 15px;
+      width: 100%; }
+    .productos .info-container span {
+      padding: 5px 15px;
+      width: 100%; }
+  .productos .add-cart {
+    margin-top: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: #005733;
+    padding: 15px;
+    border: 1px solid #005733;
+    border-radius: 25px; }
+    .productos .add-cart:hover {
+      color: #005733;
+      background-color: transparent;
+      border: 1px solid #005733; }
+
 .card {
-  color: #005733;
-  margin: 20px;
-  border-color: #005733;
-  display: flex;
-  flex-direction: column; }
-
-.card-body {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  text-align: center; }
-
-.btn-productos {
-  display: flex;
-  justify-content: center;
-  background-color: #005733;
-  border: #005733;
-  font-size: medium; }
-  .btn-productos:hover {
-    background-color: white;
-    color: #005733;
-    border: solid	1px #005733; }
+  width: 33.333333%;
+  margin: 10px;
+  border: none; }
 
 /* ------- RD PARA CELULAR ----------*/
 @media screen and (max-width: 480px) {
